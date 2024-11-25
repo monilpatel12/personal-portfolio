@@ -13,6 +13,8 @@
         <!--==================== CSS ====================-->
         <link rel="stylesheet" href="./packages/css/styles.css">
 
+        
+
         <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script>
     (function(){
@@ -102,8 +104,8 @@
                         </div>
 
                         <div class="home__data">
-                            <h1 class="home__title">Hi, I'am Monil</h1>
-                            <h3 class="home__subtitle">Software Engineer</h3>
+                            <h1 class="home__title">Hi, I am Monil</h1>
+                            <h3 class="home__subtitle"></h3>
                             <p class="home__description">"Driven by precision and innovation, I build software that combines performance with a seamless user experience. From backend logic to intuitive interfaces, my work turns complex problems into elegant, impactful solutions."</p>
                             <a href="#contact" class="button button--flex home__button">
                                 Contact Me<i class="uil uil-message button__icon"></i>
@@ -421,7 +423,7 @@
         <!--==================== PORTFOLIO ====================-->
         <section class="portfolio section" id="portfolio">
 
-            <h2 class="section__title">Portfolio</h2>
+            <h2 class="section__title">Projects</h2>
             <span class="section__subtitle">Most recent works</span>
 
             <div class="portfolio__container container swiper-container">
@@ -442,14 +444,6 @@
                     </button>
                 </div>
             </div>
-            <!-- Hidden Card for Portfolio 1 -->
-            <div id="faceRecognitionDetails" class="portfolio__details hidden">
-                <div class="portfolio__details-content">
-                    <h3>Detailed Description - Face Recognition Attendance System</h3>
-                    <p>An AI-driven system for automated attendance using facial recognition. It allows for registering new students, training models, and taking attendance seamlessly. Data is exported as CSV files for easy record-keeping, making it suitable for educational institutions.</p>
-                    <button class="button button--small" onclick="closeDetails('faceRecognitionDetails')">Close</button>
-                </div>
-            </div>
 
             <!--==================== PORTFOLIO 2 ====================-->
         
@@ -466,14 +460,6 @@
                     </button>
                 </div>
             </div>
-            <!-- Hidden Card for Portfolio 2 -->
-            <div id="weatherAppDetails" class="portfolio__details hidden">
-                <div class="portfolio__details-content">
-                    <h3>Detailed Description - Web based Weather Forecast App</h3>
-                    <p>The app provides real-time temperature, conditions, and a 5-day forecast for multiple cities. It features a modern UI and interactive components, making weather data easily accessible.</p>
-                    <button class="button button--small" onclick="closeDetails('weatherAppDetails')">Close</button>
-                </div>
-            </div>
 
             <!--==================== PORTFOLIO 3 ====================-->
         
@@ -481,13 +467,13 @@
                 <img src="./packages/images/portfolio3.PNG" alt="" class="portfolio__img">
 
                 <div class="portfolio_">
-                    <h3 class="portfolio__title">E-Commerce website</h3>
-                    <p class="portfolio__description">Above Amazon clone is adaptable to all devices, with 
-                        ui components and animated interactions.</p>
-                    <a href="#" class="button button--flex button--small portfolio__button">
+                    <h3 class="portfolio__title">MMM Casino Game</h3>
+                    <p class="portfolio__description">Multi-threaded casino simulator built with C# TCP/IP architecture, featuring dual game servers (Roulette/Blackjack) running parallel worker threads. 
+                        Implements automated AI clients and human players with real-time state synchronization and WebSocket connections.</p>
+                    <button class="button button--flex button--small portfolio__button" onclick="showModal('casino-modal')">
                         More
                         <i class="uil uil-arrow-right button__icon"></i>
-                    </a>
+                    </button>
                 </div>
             </div>
 
@@ -733,6 +719,9 @@
         <i class="uil uil-arrow-up scrollup__icon"></i>
     </a>
     
+
+    <!--==================== Typed JS ====================-->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
     <!--==================== SWIPER JS ====================-->
     <script src="./packages/js/swiper-bundle.min.js"></script>

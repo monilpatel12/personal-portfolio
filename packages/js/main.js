@@ -259,3 +259,14 @@ document.querySelector(".contact__form").addEventListener("submit", function(eve
       }
   })
 });
+
+
+var typed = new Typed('.home__subtitle', {
+  strings: ['Software Engineer', 'Full Stack Developer', 'Tech Enthusiast'],
+  typeSpeed: 40, // Typing speed in milliseconds
+  backSpeed: 50, // Backspacing speed in milliseconds
+  loop: true,    // Loop the animation
+  startDelay: 500, // Delay before typing starts
+  backDelay: 1000, // Delay before backspacing starts
+  showCursor: false // Disable the blinking cursor
+});
